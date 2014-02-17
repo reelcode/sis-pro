@@ -1,0 +1,189 @@
+/*! http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0b1 | 201101 
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
+/*! Edited version of above */
+
+@mixin reset
+{
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+$_border-box:border-box;
+$_content-box:content-box;
+$_box-model:$_border-box;
+
+@mixin box-sizing($box-model)
+{
+    -webkit-box-sizing: $box-model;
+    -moz-box-sizing: $box-model;
+    box-sizing: $box-model;
+}
+
+// Force border-box sizing model
+*,
+*:after,
+*:before
+{
+    @include box-sizing($_box-model);
+}
+
+a
+{
+    @include reset;
+}
+
+abbr,
+address,
+acronym,
+applet,
+article,
+aside,
+audio,
+
+b,
+big,
+blockquote,
+body,
+
+canvas,
+caption,
+center,
+cite,
+code,
+
+del,
+details,
+dd,
+dfn,
+div,
+dl,
+dt,
+
+em,
+
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+
+i,
+iframe,
+img,
+ins,
+
+kbd,
+
+label,
+legend,
+li,
+
+mark,
+menu,
+
+nav,
+
+object,
+ol,
+
+p,
+pre,
+
+q,
+
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+
+table,
+tbody,
+td,
+th,
+thead,
+time,
+tfoot,
+tr,
+tt,
+
+u,  
+ul,
+
+var,
+video {
+    @include reset;
+    outline:0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure, 
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style-type: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: '';
+	content: none;
+}
+
+/* remember to define visible focus styles! 
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
