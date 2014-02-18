@@ -1,1 +1,11 @@
 ﻿# PROJECT IDEAS
+------------------------------------------------
+* Mobile first approach?
+
+* Decide on responsive break points
+
+* Semantic and limited classes
+
+* Use of id for high specificity
+
+* Produce project style (and markup) guide
