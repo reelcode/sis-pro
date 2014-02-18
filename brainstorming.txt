@@ -9,3 +9,10 @@
 * Use of id for high specificity
 
 * Produce project style (and markup) guide
+
+
+
+**** Project idea:
+
+* b4uq(uery)
+* Submit common design/dev "tips/tricks" snippets that are faq on design/dev forums
