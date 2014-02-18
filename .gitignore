@@ -1,2 +1,3 @@
 ﻿*.text
+!brainstorming.txt
 .sass-cache/
